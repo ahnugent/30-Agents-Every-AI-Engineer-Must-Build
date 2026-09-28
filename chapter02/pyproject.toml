@@ -1,0 +1,22 @@
+[project]
+name = "chapter02"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "ahnugent", email = "allennugent@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = [
+    "dataclasses-json>=0.6.0,<1.0.0",
+    "ipykernel>=6.29.0",
+    "jupyter>=1.1.0",
+    "python-dotenv>=1.0.1,<2.0.0",
+]
+
+[project.scripts]
+chapter02 = "chapter02:main"
+
+[build-system]
+requires = ["uv_build>=0.12.4,<0.13.0"]
+build-backend = "uv_build"
